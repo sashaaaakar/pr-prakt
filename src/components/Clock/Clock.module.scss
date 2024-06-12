@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@500&display=swap");
+
+.container {
+  margin: 100px auto;
+  width: 1296px;
+}
+
+.header {
+  font-size: 30px;
+  margin-bottom: 25px;
+  margin-left: 5px;
+}
+
+.slider {
+  display: grid;
+  // width: 936px;
+  grid-template-areas: "x x x x x";
+  grid-column: 20px;
+}
+
+.slide {
+  display: grid;
+  grid-template-areas:
+    "i"
+    "p";
+  row-gap: 20px;
+}
+
+.img {
+  grid-area: i;
+  width: 300px;
+  display: block;
+}
+
+.name {
+  font-size: 21px;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  color: rgb(33, 37, 41);
+}
+
+.price {
+  justify-self: end;
+  // margin-right: 20px;
+  font-size: 21px;
+  font-weight: 500;
+  color: rgb(114, 174, 200);
+}
+
+.price_container {
+  grid-area: p;
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.dots {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.dot.active {
+  background-color: #000;
+}
+
+.backet {
+  position: relative;
+  display: inline-block;
+}
+
+.button {
+  display: none;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 12px 43px;
+  width: 202px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out,
+    background-color 0.3s;
+  opacity: 0;
+}
+
+.backet:hover .button {
+  display: block;
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+.button:hover {
+  background-color: #72aec8;
+}
+
+.in {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 23px;
+  justify-self: center;
+  align-self: center;
+}
+
+.in_image {
+  justify-self: center;
+  align-self: center;
+}
+
+.in_container {
+  display: grid;
+  grid-template-areas: "x x";
+}
+
+@media (max-width: 1400px) {
+  .container {
+    width: 1116px;
+  }
+
+  .img,
+  .price_container {
+    width: 264px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 936px;
+  }
+
+  .img,
+  .price_container {
+    width: 219px;
+  }
+}
+
+@media (max-width: 768px) {
+}

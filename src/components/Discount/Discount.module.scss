@@ -1,0 +1,53 @@
+.container {
+  margin: 0 auto;
+  height: 788px;
+  padding: 133px 0;
+  width: 1296px;
+  background-color: rgb(237, 241, 243);
+  display: grid;
+  grid-template-areas: "x x";
+}
+
+.img {
+  // justify-self: end;
+  // align-self: center;
+  margin-bottom: 150px;
+}
+
+.buy {
+  display: block;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 15px 46px;
+  width: 158px;
+  height: 53px;
+  // margin-top: 50px;
+}
+
+.buy:hover {
+  background-color: rgb(114, 174, 200);
+}
+
+.buy_arrow {
+  color: #fff;
+}
+
+.heading {
+  font-weight: 300;
+  font-family: "Lato", sans-serif;
+  font-size: 72px;
+}
+
+.perc {
+  font-family: 500;
+  font-size: 28px;
+}
+
+.discount {
+  display: grid;
+  width: 424px;
+  height: 404px;
+  margin-left: 90px;
+  margin-top: 50px;
+}

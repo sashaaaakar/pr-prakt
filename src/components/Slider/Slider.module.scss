@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+.wrapper {
+  width: 100%;
+  background-color: #edf1f3;
+  height: 583px;
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  margin-bottom: 98px;
+}
+
+.container {
+  width: 100%;
+}
+
+// @media (max-width: 1220px) {
+//   .wrapper {
+//     grid-template-columns: 7% 86% 7%;
+//   }
+// }
+
+// @media (max-width: 1000px) {
+//   .wrapper {
+//     grid-template-columns: 3% 94% 3%;
+//   }
+// }
+
+@media (max-width: 768px) {
+  .wrapper {
+    background-color: #edf1f3;
+    justify-content: center;
+    grid-template-columns: 5% 50% 5%;
+  }
+}

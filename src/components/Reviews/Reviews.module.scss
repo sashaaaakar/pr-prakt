@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+.container {
+  width: 1272px;
+  margin: 0 auto;
+  display: grid;
+}
+
+.quote {
+  width: 150px;
+  justify-self: center;
+}
+
+.slider {
+  display: grid;
+  grid-template-areas: "x x x x";
+}
+
+.stars_img {
+  width: 16px;
+}
+
+.img_container {
+  align-self: center;
+  justify-self: center;
+  cursor: pointer; /* Добавим курсор указателя для стрелок */
+}
+
+.reviews {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.review {
+  display: none; /* Скрываем все отзывы по умолчанию */
+}
+
+.review_active {
+  display: grid; /* Отображаем только активный отзыв */
+}
+
+.text {
+  font-size: 35px;
+  font-weight: 300;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+
+.stars_container {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.name {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}

@@ -1,0 +1,46 @@
+.container {
+  width: 1296px;
+  margin: 0 auto;
+  color: rgb(174, 174, 174);
+  font-size: 16.8px;
+}
+
+.hr {
+  width: 100%;
+
+  background-color: rgb(33, 37, 41);
+  border-bottom-color: rgb(33, 37, 41);
+  height: 1px;
+  margin: 1rem 0;
+  opacity: 0.25;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-areas: "x x x";
+}
+
+.support {
+  display: grid;
+  grid-template-areas: "x x x";
+  width: 260px;
+}
+
+.money {
+  display: grid;
+  grid-template-areas: "x x x x";
+  width: 240px;
+}
+
+.copy {
+  display: grid;
+  grid-template-areas:
+    "x"
+    "x";
+  justify-content: end;
+}
+
+.copy_item {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}

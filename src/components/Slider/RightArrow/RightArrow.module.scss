@@ -1,0 +1,9 @@
+.arrow__container {
+  justify-self: start;
+  align-self: end;
+}
+
+.arrow {
+  cursor: pointer;
+  transition: background-color 0.3s;
+}

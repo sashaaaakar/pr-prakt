@@ -1,0 +1,46 @@
+.container {
+  width: 1296px;
+  margin: 0 auto;
+}
+
+.heading {
+  text-align: center;
+  color: rgb(33, 37, 41);
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38.4px;
+  margin-bottom: 30px;
+}
+
+.images {
+  display: grid;
+  grid-template-areas: "x x x x x";
+  gap: 20px; /* добавить промежутки между изображениями, если нужно */
+}
+
+.imageContainer {
+  position: relative;
+  width: 246px;
+  cursor: pointer;
+}
+
+.img {
+  width: 100%;
+  display: block;
+  height: 300px;
+}
+
+.inst_img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateY(10px);
+  width: 50px;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.imageContainer:hover .inst_img {
+  opacity: 1;
+  transform: translate(-50%, -50%) translateY(0);
+}

@@ -1,0 +1,180 @@
+.container {
+  width: 960px;
+  margin: 0px auto;
+  display: grid;
+  grid-template-areas:
+    "top top"
+    "about total";
+  grid-template-columns: 60% 40%;
+}
+
+.about {
+  grid-area: about;
+}
+
+.clear_button {
+  font-size: 16px;
+  margin-left: 5px;
+  // margin-top: 20px;
+}
+
+.clear_icon {
+  width: 24px;
+}
+
+.clear_button_container {
+  background-color: #000;
+  color: #fff;
+  padding: 7px 15px;
+  // width: 240px;
+  // height: 50px;
+  border-radius: 30px;
+  align-self: end;
+}
+
+.clear_button_container:hover {
+  background-color: rgb(114, 174, 200);
+}
+
+.top {
+  grid-area: top;
+}
+
+.clear {
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading {
+  color: rgb(33, 32, 31);
+  font-size: 48px;
+  line-height: 44px;
+  font-weight: 800;
+  margin-top: 20px;
+}
+
+.arrow {
+  width: 24px;
+}
+
+.back {
+  color: rgb(158, 155, 152);
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+.goods_img {
+  width: 100px;
+  border-radius: 10px;
+  grid-area: img;
+}
+
+.goods {
+  margin-top: 30px;
+  padding: 8px 0px;
+  display: grid;
+  grid-template-areas: "img desc count";
+  grid-template-columns: 17% 66% 17%;
+}
+
+.desc {
+  display: grid;
+  grid-area: desc;
+  padding-left: 20px;
+  align-items: center;
+  justify-items: start;
+  grid-template-rows: 40% 60%;
+}
+
+.desc_name {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.desc_price {
+  align-self: start;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.counter {
+  display: grid;
+  grid-area: count;
+  border-radius: 10px;
+  background-color: #d7dddf;
+  grid-template-columns: 33% 33% 33%;
+  align-items: center;
+  justify-items: center;
+  height: 32px;
+  align-self: center;
+}
+.counter_minus {
+  width: 24px;
+}
+.counter_num {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.counter_plus {
+  width: 24px;
+}
+
+.total {
+  grid-area: total;
+  display: grid;
+  grid-template-areas:
+    "x"
+    "x"
+    "x";
+  margin-top: 120px;
+  margin-left: 80px;
+  height: 150px;
+}
+.total_heading {
+  font-size: 29px;
+  font-weight: 800;
+}
+
+.hr {
+  margin-top: 20px;
+  height: 1px;
+  background-color: #d7dddf;
+  margin-bottom: 20px;
+}
+
+// .total_googs_container {
+// }
+
+// .total_goods {
+// }
+.total_buy_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+// .total_sum {
+
+// }
+.total_buy {
+  font-size: 20px;
+  font-weight: 600;
+}
+.total_buy_sum {
+  font-size: 20px;
+  font-weight: 600;
+}
+.total_button {
+  margin-top: 50px;
+  padding: 15px 50px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 15px;
+}
+
+.total_button:hover {
+  background-color: rgb(114, 174, 200);
+}
